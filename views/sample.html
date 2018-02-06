@@ -14,7 +14,7 @@
 
     <!-- Custom CSS inside CSS folder -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/modal.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,12 +24,39 @@
     <![endif]-->
   </head>
   <body>
+      <h1>Sample HTML File</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#display">Display</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
 
-  <h1>Sample HTML File</h1>
-  <img src="img/example-image.png">
-  
+      <button id="modal-launcher">Launch Modal Window</button>
+      
+      <div id="modal-background"></div>
+      <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div class="inner-content"></div>
+      </div>​
+
+      <form action="/api/create" method="POST" class="add-form">
+        Name:<br>
+        <input type="text" name="name" placeholder="Enter Name"><br>
+        Age:<br>
+        <input type="text" name="age" placeholder="Enter Age"><br>
+        Tags:<br>
+        <input type="text" name="tags" placeholder="Enter Age"><br>
+        Weight:<br>
+        <input type="text" name="weight" placeholder="Enter Weight"><br>
+        Color:<br>
+        <input type="text" name="color" placeholder="Enter Color"><br>
+        URL:<br>
+        <input type="text" name="url" placeholder="Enter URL"><br>
+        <input type="submit" value="Submit" class="btn">
+      </form>
   </body>
-
     <!-- JQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 
